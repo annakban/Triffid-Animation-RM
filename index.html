@@ -38,7 +38,7 @@
     let value = 0;
 
     function animateCRNV() {
-      value += direction * 1;
+      value += direction * 3;
       if (value >= 900 || value <= 0) direction *= -1;
       el.style.fontVariationSettings = `"CRNV" ${value.toFixed(1)}`;
       requestAnimationFrame(animateCRNV);
