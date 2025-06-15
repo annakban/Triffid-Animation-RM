@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Triffid Carnivore Animation</title>
+  <style>
+    @font-face {
+      font-family: 'TriffidCarnVF';
+      src: url('TriffidCarnVF.woff2') format('woff2');
+      font-weight: 400;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      color: #f5dfcd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .animated-text {
+      font-family: 'TriffidCarnVF';
+      font-size: 12vw;
+      font-variation-settings: "CRNV" 0;
+      animation: growCarn 4s infinite alternate ease-in-out;
+      text-align: center;
+      line-height: 1;
+    }
+
+    @keyframes growCarn {
+      from { font-variation-settings: "CRNV" 0; }
+      to   { font-variation-settings: "CRNV" 100; }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-text">Triffid</div>
+</body>
+</html>
