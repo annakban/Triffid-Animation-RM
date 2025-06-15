@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Triffid Carnivore Animation</title>
   <style>
     @font-face {
@@ -15,18 +16,21 @@
       padding: 0;
       background: transparent;
       color: #f5dfcd;
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100%;
-      width: 100%;
     }
 
     .animated-text {
       font-family: 'TriffidCarnVF';
+      font-variation-settings: "CRNV" 0;
       font-size: 100%;
-      text-align: center;
       line-height: 1;
+      white-space: nowrap;
+      width: 100%;
+      text-align: center;
     }
   </style>
 </head>
@@ -49,5 +53,4 @@
   </script>
 </body>
 </html>
-
 
