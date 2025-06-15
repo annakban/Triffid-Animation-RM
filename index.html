@@ -15,20 +15,17 @@
       padding: 0;
       background: transparent;
       color: #f5dfcd;
-      width: 100vw;
-      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 100vh;
     }
 
     .animated-text {
       font-family: 'TriffidCarnVF';
-      font-variation-settings: "CRNV" 0;
       font-size: 12vw;
-      line-height: 1;
-      white-space: nowrap;
       text-align: center;
+      line-height: 1;
     }
   </style>
 </head>
@@ -41,7 +38,7 @@
     let value = 0;
 
     function animateCRNV() {
-      value += direction * 2.5;
+      value += direction * 1;
       if (value >= 100 || value <= 0) direction *= -1;
       el.style.fontVariationSettings = `"CRNV" ${value.toFixed(1)}`;
       requestAnimationFrame(animateCRNV);
@@ -51,4 +48,5 @@
   </script>
 </body>
 </html>
+
 
